@@ -1,0 +1,27 @@
+# Sequential create / destroy / preserve loop. Runs on free tiers by default.
+# WARNING: free tiers may use submitted data for training. Do not send confidential questions.
+id: creator-critic-keeper
+name: Creator / Critic / Keeper
+protocol: create-critique-preserve
+maxCycles: 4
+creator:
+  id: creator
+  role: Creator
+  promptRef: creator
+  model: groq:llama-3.3-70b-versatile
+  fallbackModels: [mistral:mistral-small-latest, ollama:llama3.1:8b]
+  maxTokens: 1000
+critic:
+  id: critic
+  role: Critic
+  promptRef: critic
+  model: mistral:mistral-small-latest
+  fallbackModels: [groq:openai/gpt-oss-120b, ollama:llama3.1:8b]
+  maxTokens: 800
+keeper:
+  id: keeper
+  role: Keeper
+  promptRef: keeper
+  model: google:gemini-2.5-flash
+  fallbackModels: [groq:openai/gpt-oss-120b, mistral:mistral-small-latest]
+  maxTokens: 2000

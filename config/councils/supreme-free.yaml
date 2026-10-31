@@ -1,0 +1,39 @@
+# Supreme Council using only free tiers: google, groq, mistral, ollama.
+# OpenRouter free models appear only as a last-resort fallback.
+# WARNING: free tiers may use submitted data for training. Do not send confidential questions.
+id: supreme-free
+name: Supreme Council (free tier)
+protocol: parallel-rounds
+maxRounds: 3
+chair:
+  id: chair
+  role: Chair
+  promptRef: chair
+  model: google:gemini-2.5-flash
+  fallbackModels: [mistral:mistral-small-latest, groq:openai/gpt-oss-120b, ollama:llama3.1:8b, openrouter:meta-llama/llama-3.3-70b-instruct:free]
+  maxTokens: 2000
+agents:
+  - id: optimist
+    role: Optimist
+    promptRef: optimist
+    model: groq:llama-3.3-70b-versatile
+    fallbackModels: [mistral:mistral-small-latest, ollama:llama3.1:8b, openrouter:meta-llama/llama-3.3-70b-instruct:free]
+    maxTokens: 800
+  - id: skeptic
+    role: Skeptic
+    promptRef: skeptic
+    model: google:gemini-2.5-flash
+    fallbackModels: [groq:openai/gpt-oss-120b, ollama:llama3.1:8b, openrouter:meta-llama/llama-3.3-70b-instruct:free]
+    maxTokens: 800
+  - id: cost-analyst
+    role: Cost/Effort Analyst
+    promptRef: cost-analyst
+    model: mistral:mistral-small-latest
+    fallbackModels: [groq:llama-3.3-70b-versatile, ollama:llama3.1:8b, openrouter:meta-llama/llama-3.3-70b-instruct:free]
+    maxTokens: 800
+  - id: risk-officer
+    role: Risk Officer
+    promptRef: risk-officer
+    model: groq:openai/gpt-oss-120b
+    fallbackModels: [google:gemini-2.5-flash, ollama:llama3.1:8b, openrouter:meta-llama/llama-3.3-70b-instruct:free]
+    maxTokens: 800

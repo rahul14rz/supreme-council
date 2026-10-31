@@ -1,0 +1,18 @@
+# Appended to every question so answers can be graded deterministically.
+questionSuffix: Answer with a clear decision. Begin your recommendation with "Yes" or "No".
+
+# The single-prompt baseline. It uses the same model as the members of
+# supreme-single, so the comparison asks: does a council of that model beat
+# one well-prompted call to it?
+baseline:
+  id: baseline
+  role: Single-prompt baseline
+  systemPrompt: You are a careful, expert advisor. Think the question through, then give your recommendation on the first line, starting with "Recommendation:".
+  model: anthropic:claude-sonnet-5-5
+  maxTokens: 1500
+
+conditions:
+  - { id: baseline, label: "(a) single-prompt baseline" }
+  - { id: same-provider, label: "(b) same-provider council", council: supreme-single }
+  - { id: mixed, label: "(c) mixed-provider council", council: supreme-mixed }
+  - { id: free, label: "(d) free-tier council", council: supreme-free }

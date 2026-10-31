@@ -1,0 +1,18 @@
+# USD per million tokens, keyed by "provider:model". Prices change: verify
+# against each provider's pricing page. Free-tier models are $0 but still
+# count toward the request quotas in providers.yaml. A model missing from
+# this table is costed at $0 and flagged as unpriced in the startup report.
+prices:
+  anthropic:claude-opus-5-5:   { inputPerMTok: 4.00, outputPerMTok: 20.00 }
+  anthropic:claude-sonnet-5-5: { inputPerMTok: 2.00, outputPerMTok: 10.00 }
+  anthropic:claude-haiku-5-5:  { inputPerMTok: 0.10, outputPerMTok: 0.50 }
+  openai:gpt-5:                { inputPerMTok: 1.25, outputPerMTok: 10.00 }
+  openai:gpt-5-mini:           { inputPerMTok: 0.25, outputPerMTok: 2.00 }
+  mistral:mistral-large-latest: { inputPerMTok: 2.00, outputPerMTok: 6.00 }
+  # Free tiers (priced at $0 while you stay on the free plan)
+  google:gemini-2.5-flash:          { inputPerMTok: 0, outputPerMTok: 0 }
+  groq:llama-3.3-70b-versatile:     { inputPerMTok: 0, outputPerMTok: 0 }
+  groq:openai/gpt-oss-120b:         { inputPerMTok: 0, outputPerMTok: 0 }
+  mistral:mistral-small-latest:     { inputPerMTok: 0, outputPerMTok: 0 }
+  openrouter:meta-llama/llama-3.3-70b-instruct:free: { inputPerMTok: 0, outputPerMTok: 0 }
+  ollama:llama3.1:8b:               { inputPerMTok: 0, outputPerMTok: 0 }
