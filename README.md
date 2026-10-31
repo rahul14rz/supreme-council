@@ -7,9 +7,9 @@ You ask a question. A council of role-based LLM agents (an Optimist, a Skeptic, 
 > [!WARNING]
 > **Free tiers may use your data for training.** Google AI Studio's free tier, Groq, Mistral's free plan and OpenRouter's free models may use the prompts and outputs you send to train or improve their models. **Do not send confidential questions through a free-tier council** (`supreme-free`, `creator-critic-keeper`). For anything sensitive, use a paid provider with a data agreement you trust, or a local Ollama model.
 
-| Live debate | Verdict | Providers |
-|---|---|---|
-| ![Timeline](docs/screenshots/timeline.png) | ![Verdict](docs/screenshots/verdict.png) | ![Providers](docs/screenshots/providers.png) |
+| Convene | In session | The ruling | Providers |
+|---|---|---|---|
+| ![Convene](docs/screenshots/convene.png) | ![Session](docs/screenshots/session.png) | ![Ruling](docs/screenshots/ruling.png) | ![Providers](docs/screenshots/providers.png) |
 
 The screenshots come from the Flutter web build talking to the server in `--mock` mode, so the agent text is a placeholder.
 
@@ -174,12 +174,14 @@ curl -N localhost:8787/sessions/<sessionId>/stream
 
 The app lives in `app/`. It has these screens:
 
-- **Debate:** question input, council picker and a round or cycle slider.
-- **Live timeline:** a distinct colour and avatar per agent, with tokens streaming in.
-- **Verdict card:** dissent in a red box, with unresolved disagreements directly below it.
+- **Convene:** question input, council picker with each council's readiness, a preview of the bench, and a rounds or cycles control.
+- **In session:** the bench of member seats, each a monogram ringed in that member's colour, lit while the member speaks. Turns stream in under their round, and each carries a docket mark such as `§ 2·03` (round, then turn).
+- **The ruling:** typeset like a written opinion on paper. The dissenting opinion comes straight after the recommendation, followed by numbered unresolved disagreements.
 - **Cost bar:** the debate's cost, tokens and requests per provider.
-- **Providers:** availability, plus daily quota usage as progress bars.
+- **Providers:** availability, plus daily quota usage.
 - **History:** past sessions; tapping one replays it through the same stream.
+
+The design uses graphite surfaces with a single brass accent, and IBM Plex (Sans, Serif and Mono, under the SIL Open Font License, bundled in `app/assets/fonts`).
 
 Start the server, then run the app:
 
