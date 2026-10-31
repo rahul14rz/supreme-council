@@ -51,9 +51,9 @@ function languageModel(ref: ModelRef, providers: Record<ProviderId, ProviderConf
     case 'groq': return createGroq({ apiKey: credential })(model);
     case 'mistral': return createMistral({ apiKey: credential })(model);
     case 'openrouter':
-      return createOpenAICompatible({ name: 'openrouter', baseURL: cfg.baseUrl ?? '', apiKey: credential })(model);
+      return createOpenAICompatible({ name: 'openrouter', baseURL: cfg.baseUrl ?? '', apiKey: credential, includeUsage: true })(model);
     case 'ollama':
-      return createOpenAICompatible({ name: 'ollama', baseURL: `${credential.replace(/\/$/, '')}/v1` })(model);
+      return createOpenAICompatible({ name: 'ollama', baseURL: `${credential.replace(/\/$/, '')}/v1`, includeUsage: true })(model);
   }
 }
 
