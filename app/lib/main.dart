@@ -4,6 +4,7 @@ import 'api.dart';
 import 'screens/debate_screen.dart';
 import 'screens/history_screen.dart';
 import 'screens/providers_screen.dart';
+import 'theme.dart';
 
 void main() => runApp(SupremeCouncilApp(api: Api()));
 
@@ -12,14 +13,12 @@ class SupremeCouncilApp extends StatelessWidget {
   final Api api;
 
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Supreme Council',
-      theme: ThemeData(colorSchemeSeed: const Color(0xFF6A4C93), useMaterial3: true),
-      darkTheme: ThemeData(colorSchemeSeed: const Color(0xFF6A4C93), brightness: Brightness.dark, useMaterial3: true),
-      home: HomeScreen(api: api),
-    );
-  }
+  Widget build(BuildContext context) => MaterialApp(
+        title: 'Supreme Council',
+        debugShowCheckedModeBanner: false,
+        theme: buildTheme(),
+        home: HomeScreen(api: api),
+      );
 }
 
 class HomeScreen extends StatefulWidget {
@@ -42,16 +41,31 @@ class _HomeScreenState extends State<HomeScreen> {
       ProvidersScreen(key: ValueKey('providers-$_tab'), api: widget.api),
     ];
     return Scaffold(
-      appBar: AppBar(title: const Text('Supreme Council')),
-      body: IndexedStack(index: _tab, children: screens),
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: _tab,
-        onDestinationSelected: (i) => setState(() => _tab = i),
-        destinations: const [
-          NavigationDestination(icon: Icon(Icons.forum_outlined), label: 'Debate'),
-          NavigationDestination(icon: Icon(Icons.history), label: 'History'),
-          NavigationDestination(icon: Icon(Icons.dns_outlined), label: 'Providers'),
-        ],
+      body: SafeArea(
+        bottom: false,
+        child: Column(children: [
+          Container(
+            height: 56,
+            padding: const EdgeInsets.symmetric(horizontal: Space.s24),
+            alignment: Alignment.centerLeft,
+            decoration: const BoxDecoration(border: Border(bottom: BorderSide(color: Palette.hairline))),
+            child: const Text('Supreme Council', style: TextStyle(fontFamily: 'Plex Serif', fontSize: 18, color: Palette.text)),
+          ),
+          Expanded(child: IndexedStack(index: _tab, children: screens)),
+        ]),
+      ),
+      bottomNavigationBar: Container(
+        decoration: const BoxDecoration(border: Border(top: BorderSide(color: Palette.hairline))),
+        child: NavigationBar(
+          selectedIndex: _tab,
+          onDestinationSelected: (i) => setState(() => _tab = i),
+          labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
+          destinations: const [
+            NavigationDestination(icon: Icon(Icons.forum_outlined), selectedIcon: Icon(Icons.forum), label: 'Debate'),
+            NavigationDestination(icon: Icon(Icons.history), label: 'History'),
+            NavigationDestination(icon: Icon(Icons.dns_outlined), selectedIcon: Icon(Icons.dns), label: 'Providers'),
+          ],
+        ),
       ),
     );
   }

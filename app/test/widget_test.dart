@@ -27,10 +27,10 @@ void main() {
     expect(find.text('Upside is large.'), findsOneWidget);
     expect(find.text('Turn failed: all 2 model options failed'), findsOneWidget);
     expect(find.text('Run a one-quarter pilot.'), findsOneWidget);
-    expect(find.descendant(of: find.byKey(const Key('dissent')), matching: find.text('DISSENT · Risk Officer')), findsOneWidget);
+    expect(find.descendant(of: find.byKey(const Key('dissent')), matching: find.text('Dissenting opinion · Risk Officer')), findsOneWidget);
     expect(find.text('Coverage gaps are irreversible for key accounts.'), findsOneWidget);
     expect(find.descendant(of: find.byKey(const Key('unresolved')), matching: find.text('Support coverage on Fridays')), findsOneWidget);
-    expect(find.text('Cost \$0.0123'), findsOneWidget);
-    expect(find.text('Requests: groq 5'), findsOneWidget);
+    expect(find.text('\$0.0123'), findsOneWidget);
+    expect(find.text('groq 5'), findsOneWidget);
   });
 }
