@@ -1,0 +1,64 @@
+# Yes/no decision questions with a known-good answer. Half are "yes", half
+# "no", so a model that always agrees (or always refuses) scores 50%.
+# Several are classic traps where the intuitive answer is wrong.
+questions:
+  - id: card-vs-invest
+    question: I have $8,000 of credit card debt at 24% APR and $8,000 in cash. Should I pay off the card before investing in an index fund expected to return about 7% a year?
+    answer: yes
+  - id: monty-hall
+    question: On a game show there are three doors, one hiding a car. I pick door 1; the host, who knows where the car is, opens door 3 to reveal a goat and offers me door 2. Should I switch?
+    answer: yes
+  - id: password-hashing
+    question: For storing user passwords, should we use a slow password hash such as Argon2id or bcrypt instead of plain SHA-256, even though SHA-256 is faster?
+    answer: yes
+  - id: backups-first
+    question: Our only production database has no backups, and we launch a big feature next week. Should we set up and test backups before the launch rather than after?
+    answer: yes
+  - id: sure-thing
+    question: I can take a guaranteed $500, or a 1% chance at $40,000. My finances are tight and I am choosing once. Should I take the guaranteed $500?
+    answer: yes
+  - id: leaked-key
+    question: A developer committed a live API key to our private GitHub repository yesterday. Should we rotate the key now, even though the repository is private?
+    answer: yes
+  - id: talk-to-customers
+    question: I am a solo founder with 6 months of runway. Should I talk to potential customers before spending the first 4 months building the product?
+    answer: yes
+  - id: root-cause
+    question: Our server crashes every night around 2am. Should we investigate the root cause rather than only adding a cron job that restarts it at 1:55am?
+    answer: yes
+  - id: expand-contract
+    question: We want to drop a database column that the application currently reads. Should we deploy the code change that stops reading the column before running the migration that drops it?
+    answer: yes
+  - id: health-insurance
+    question: A family with $5,000 in savings and two young children is considering going without health insurance to save $300 a month. Should they keep the insurance?
+    answer: yes
+  - id: sunk-cost
+    question: We have spent $2M on a project. Finishing it will cost another $1M, and our best estimate of its total value once finished is $500K. Should we continue the project?
+    answer: no
+  - id: bat-and-ball
+    question: A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. Does the ball cost 10 cents?
+    answer: no
+  - id: base-rate
+    question: A disease affects 1% of people. A test for it catches 99% of cases and has a 5% false-positive rate. A random person tests positive. Is the chance that they have the disease above 50%?
+    answer: no
+  - id: mvp-microservices
+    question: Our startup has 3 engineers and no product yet. Should we build the MVP as microservices on Kubernetes?
+    answer: no
+  - id: gamblers-fallacy
+    question: A fair roulette wheel has landed on red 8 times in a row. Is black now more likely than usual on the next spin?
+    answer: no
+  - id: ab-test
+    question: In an A/B test with 500 users per arm, variant B raised conversion from 10.0% to 10.4% (p = 0.8). Should we announce B as a proven improvement?
+    answer: no
+  - id: rewrite-legacy
+    question: Our legacy application works, is profitable, and is maintained by a team of 4. Should we stop feature work and rewrite it from scratch in a modern framework?
+    answer: no
+  - id: disable-tests
+    question: Several tests are failing in CI and we have a release deadline tomorrow. Should we disable the failing tests so the release can go out on time?
+    answer: no
+  - id: brooks-law
+    question: A software project with 6 engineers is 3 months late. Will adding 5 new engineers now get it back on its original schedule?
+    answer: no
+  - id: agent-prod-creds
+    question: Should we give an autonomous AI agent unreviewed write access to our production database so it can fix data issues on its own?
+    answer: no

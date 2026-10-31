@@ -8,6 +8,9 @@ import { MockLLMClient } from './llm/mock-client.js';
 import { formatStartupReport } from './providers/report.js';
 import { createCallDeps } from './runtime.js';
 import { buildApp } from './server/app.js';
+import { loadDotEnv } from './env.js';
+
+loadDotEnv();
 
 const { values } = parseArgs({ options: { mock: { type: 'boolean', default: false } } });
 const config = loadConfig();

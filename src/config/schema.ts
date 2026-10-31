@@ -56,7 +56,7 @@ export const PricesFileSchema = z.object({
 /** Hard ceiling on any single turn, whatever a council file asks for. */
 export const MAX_TOKENS_PER_TURN = 8000;
 
-const AgentFileSchema = z.object({
+export const AgentFileSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   role: z.string().min(1),
   systemPrompt: z.string().min(1).optional(),

@@ -9,6 +9,9 @@ import { resolveRounds } from '../orchestrator/run.js';
 import { formatStartupReport, usesFreeTier } from '../providers/report.js';
 import { createCallDeps, startSession } from '../runtime.js';
 import { TimelinePrinter } from './printer.js';
+import { loadDotEnv } from '../env.js';
+
+loadDotEnv();
 
 const USAGE = `Usage: npm run debate -- [--council <id>] [--rounds <n>] [--mock] [--db <path>] "your question"`;
 
