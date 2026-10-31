@@ -1,0 +1,37 @@
+# Supreme Council mixing providers, so members do not share one model's blind spots.
+id: supreme-mixed
+name: Supreme Council (mixed providers)
+protocol: parallel-rounds
+maxRounds: 3
+chair:
+  id: chair
+  role: Chair
+  promptRef: chair
+  model: anthropic:claude-opus-5-5
+  fallbackModels: [openai:gpt-5]
+  maxTokens: 2000
+agents:
+  - id: optimist
+    role: Optimist
+    promptRef: optimist
+    model: openai:gpt-5-mini
+    fallbackModels: [anthropic:claude-haiku-5-5]
+    maxTokens: 800
+  - id: skeptic
+    role: Skeptic
+    promptRef: skeptic
+    model: anthropic:claude-sonnet-5-5
+    fallbackModels: [openai:gpt-5-mini]
+    maxTokens: 800
+  - id: cost-analyst
+    role: Cost/Effort Analyst
+    promptRef: cost-analyst
+    model: google:gemini-2.5-flash
+    fallbackModels: [openai:gpt-5-mini]
+    maxTokens: 800
+  - id: risk-officer
+    role: Risk Officer
+    promptRef: risk-officer
+    model: mistral:mistral-large-latest
+    fallbackModels: [anthropic:claude-haiku-5-5]
+    maxTokens: 800

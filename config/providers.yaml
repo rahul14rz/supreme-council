@@ -1,0 +1,45 @@
+# Per-provider access and limits. Free-tier limits change often: check the
+# provider's console and edit these numbers rather than any code.
+# rpm = requests per minute, rpd = requests per day (null = no daily cap).
+retry:
+  maxAttempts: 3        # attempts per model before falling through to the next fallback
+  baseDelayMs: 1000     # exponential backoff: 1s, 2s, 4s ... capped at maxDelayMs
+  maxDelayMs: 8000
+
+providers:
+  anthropic:
+    apiKeyEnv: ANTHROPIC_API_KEY
+    rpm: 50
+    rpd: null
+    freeTier: false
+  openai:
+    apiKeyEnv: OPENAI_API_KEY
+    rpm: 500
+    rpd: null
+    freeTier: false
+  google:
+    apiKeyEnv: GOOGLE_API_KEY
+    rpm: 10
+    rpd: 250
+    freeTier: true
+  groq:
+    apiKeyEnv: GROQ_API_KEY
+    rpm: 30
+    rpd: 1000
+    freeTier: true
+  mistral:
+    apiKeyEnv: MISTRAL_API_KEY
+    rpm: 60
+    rpd: null
+    freeTier: true
+  openrouter:
+    apiKeyEnv: OPENROUTER_API_KEY
+    baseUrl: https://openrouter.ai/api/v1
+    rpm: 20
+    rpd: 50
+    freeTier: true
+  ollama:
+    baseUrlEnv: OLLAMA_BASE_URL
+    rpm: 600
+    rpd: null
+    freeTier: true

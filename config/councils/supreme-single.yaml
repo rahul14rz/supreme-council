@@ -1,0 +1,37 @@
+# Supreme Council on a single provider (Anthropic).
+id: supreme-single
+name: Supreme Council (single provider)
+protocol: parallel-rounds
+maxRounds: 3
+chair:
+  id: chair
+  role: Chair
+  promptRef: chair
+  model: anthropic:claude-opus-5-5
+  fallbackModels: [anthropic:claude-sonnet-5-5]
+  maxTokens: 2000
+agents:
+  - id: optimist
+    role: Optimist
+    promptRef: optimist
+    model: anthropic:claude-sonnet-5-5
+    fallbackModels: [anthropic:claude-haiku-5-5]
+    maxTokens: 800
+  - id: skeptic
+    role: Skeptic
+    promptRef: skeptic
+    model: anthropic:claude-sonnet-5-5
+    fallbackModels: [anthropic:claude-haiku-5-5]
+    maxTokens: 800
+  - id: cost-analyst
+    role: Cost/Effort Analyst
+    promptRef: cost-analyst
+    model: anthropic:claude-sonnet-5-5
+    fallbackModels: [anthropic:claude-haiku-5-5]
+    maxTokens: 800
+  - id: risk-officer
+    role: Risk Officer
+    promptRef: risk-officer
+    model: anthropic:claude-sonnet-5-5
+    fallbackModels: [anthropic:claude-haiku-5-5]
+    maxTokens: 800
