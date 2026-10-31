@@ -1,0 +1,20 @@
+name: supreme_council
+description: "Supreme Council: multi-agent debate where role-based AIs argue, a chair rules, and dissent stays visible."
+publish_to: 'none'
+version: 1.0.0
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true

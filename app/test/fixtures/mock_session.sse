@@ -1,0 +1,843 @@
+event: turn_start
+data: {"type":"turn_start","turnId":"t1","agentId":"chair","role":"Chair","phase":"framing","round":0}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"[mock "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"Chair] "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"This "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"is "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"placeholder "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"reply "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"Chair. "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"With "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"real "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"provider, "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"this "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"turn "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"would "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"argue "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"question "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"Chair's "}
+
+event: token
+data: {"type":"token","turnId":"t1","text":"perspective."}
+
+event: turn_end
+data: {"type":"turn_end","turnId":"t1","result":{"status":"ok","text":"[mock Chair] This is a placeholder reply from the Chair. With a real provider, this turn would argue the question from the Chair's perspective.","model":"google:gemini-2.5-flash","usage":{"inputTokens":360,"outputTokens":36},"costUsd":0,"failures":[],"requests":{"google":1}}}
+
+event: turn_start
+data: {"type":"turn_start","turnId":"t2","agentId":"optimist","role":"Optimist","phase":"opening","round":1}
+
+event: turn_start
+data: {"type":"turn_start","turnId":"t3","agentId":"skeptic","role":"Skeptic","phase":"opening","round":1}
+
+event: turn_start
+data: {"type":"turn_start","turnId":"t4","agentId":"cost-analyst","role":"Cost/Effort Analyst","phase":"opening","round":1}
+
+event: turn_start
+data: {"type":"turn_start","turnId":"t5","agentId":"risk-officer","role":"Risk Officer","phase":"opening","round":1}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"[mock "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"Optimist] "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"This "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"is "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"placeholder "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"reply "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"Optimist. "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"With "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"real "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"provider, "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"this "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"turn "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"would "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"argue "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"question "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"Optimist's "}
+
+event: token
+data: {"type":"token","turnId":"t2","text":"perspective."}
+
+event: turn_end
+data: {"type":"turn_end","turnId":"t2","result":{"status":"ok","text":"[mock Optimist] This is a placeholder reply from the Optimist. With a real provider, this turn would argue the question from the Optimist's perspective.","model":"groq:llama-3.3-70b-versatile","usage":{"inputTokens":406,"outputTokens":38},"costUsd":0,"failures":[],"requests":{"groq":1}}}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"[mock "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"Skeptic] "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"This "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"is "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"placeholder "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"reply "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"Skeptic. "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"With "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"real "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"provider, "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"this "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"turn "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"would "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"argue "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"question "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"Skeptic's "}
+
+event: token
+data: {"type":"token","turnId":"t3","text":"perspective."}
+
+event: turn_end
+data: {"type":"turn_end","turnId":"t3","result":{"status":"ok","text":"[mock Skeptic] This is a placeholder reply from the Skeptic. With a real provider, this turn would argue the question from the Skeptic's perspective.","model":"google:gemini-2.5-flash","usage":{"inputTokens":436,"outputTokens":38},"costUsd":0,"failures":[],"requests":{"google":1}}}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"[mock "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"Cost/Effort "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"Analyst] "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"This "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"is "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"placeholder "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"reply "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"Cost/Effort "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"Analyst. "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"With "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"real "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"provider, "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"this "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"turn "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"would "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"argue "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"question "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"Cost/Effort "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"Analyst's "}
+
+event: token
+data: {"type":"token","turnId":"t4","text":"perspective."}
+
+event: turn_end
+data: {"type":"turn_end","turnId":"t4","result":{"status":"ok","text":"[mock Cost/Effort Analyst] This is a placeholder reply from the Cost/Effort Analyst. With a real provider, this turn would argue the question from the Cost/Effort Analyst's perspective.","model":"mistral:mistral-small-latest","usage":{"inputTokens":400,"outputTokens":47},"costUsd":0,"failures":[],"requests":{"mistral":1}}}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"[mock "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"Risk "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"Officer] "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"This "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"is "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"placeholder "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"reply "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"Risk "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"Officer. "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"With "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"real "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"provider, "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"this "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"turn "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"would "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"argue "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"question "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"Risk "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"Officer's "}
+
+event: token
+data: {"type":"token","turnId":"t5","text":"perspective."}
+
+event: turn_end
+data: {"type":"turn_end","turnId":"t5","result":{"status":"ok","text":"[mock Risk Officer] This is a placeholder reply from the Risk Officer. With a real provider, this turn would argue the question from the Risk Officer's perspective.","model":"groq:openai/gpt-oss-120b","usage":{"inputTokens":414,"outputTokens":41},"costUsd":0,"failures":[],"requests":{"groq":1}}}
+
+event: round_complete
+data: {"type":"round_complete","round":1,"phase":"opening"}
+
+event: turn_start
+data: {"type":"turn_start","turnId":"t6","agentId":"optimist","role":"Optimist","phase":"rebuttal","round":2}
+
+event: turn_start
+data: {"type":"turn_start","turnId":"t7","agentId":"skeptic","role":"Skeptic","phase":"rebuttal","round":2}
+
+event: turn_start
+data: {"type":"turn_start","turnId":"t8","agentId":"cost-analyst","role":"Cost/Effort Analyst","phase":"rebuttal","round":2}
+
+event: turn_start
+data: {"type":"turn_start","turnId":"t9","agentId":"risk-officer","role":"Risk Officer","phase":"rebuttal","round":2}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"[mock "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"Optimist] "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"This "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"is "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"placeholder "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"reply "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"Optimist. "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"With "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"real "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"provider, "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"this "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"turn "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"would "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"argue "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"question "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"Optimist's "}
+
+event: token
+data: {"type":"token","turnId":"t6","text":"perspective."}
+
+event: turn_end
+data: {"type":"turn_end","turnId":"t6","result":{"status":"ok","text":"[mock Optimist] This is a placeholder reply from the Optimist. With a real provider, this turn would argue the question from the Optimist's perspective.","model":"groq:llama-3.3-70b-versatile","usage":{"inputTokens":624,"outputTokens":38},"costUsd":0,"failures":[],"requests":{"groq":1}}}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"[mock "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"Skeptic] "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"This "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"is "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"placeholder "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"reply "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"Skeptic. "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"With "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"real "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"provider, "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"this "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"turn "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"would "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"argue "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"question "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"Skeptic's "}
+
+event: token
+data: {"type":"token","turnId":"t7","text":"perspective."}
+
+event: turn_end
+data: {"type":"turn_end","turnId":"t7","result":{"status":"ok","text":"[mock Skeptic] This is a placeholder reply from the Skeptic. With a real provider, this turn would argue the question from the Skeptic's perspective.","model":"google:gemini-2.5-flash","usage":{"inputTokens":653,"outputTokens":38},"costUsd":0,"failures":[],"requests":{"google":1}}}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"[mock "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"Cost/Effort "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"Analyst] "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"This "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"is "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"placeholder "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"reply "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"Cost/Effort "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"Analyst. "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"With "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"real "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"provider, "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"this "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"turn "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"would "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"argue "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"question "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"Cost/Effort "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"Analyst's "}
+
+event: token
+data: {"type":"token","turnId":"t8","text":"perspective."}
+
+event: turn_end
+data: {"type":"turn_end","turnId":"t8","result":{"status":"ok","text":"[mock Cost/Effort Analyst] This is a placeholder reply from the Cost/Effort Analyst. With a real provider, this turn would argue the question from the Cost/Effort Analyst's perspective.","model":"mistral:mistral-small-latest","usage":{"inputTokens":618,"outputTokens":47},"costUsd":0,"failures":[],"requests":{"mistral":1}}}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"[mock "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"Risk "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"Officer] "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"This "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"is "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"placeholder "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"reply "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"Risk "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"Officer. "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"With "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"real "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"provider, "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"this "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"turn "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"would "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"argue "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"question "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"Risk "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"Officer's "}
+
+event: token
+data: {"type":"token","turnId":"t9","text":"perspective."}
+
+event: turn_end
+data: {"type":"turn_end","turnId":"t9","result":{"status":"ok","text":"[mock Risk Officer] This is a placeholder reply from the Risk Officer. With a real provider, this turn would argue the question from the Risk Officer's perspective.","model":"groq:openai/gpt-oss-120b","usage":{"inputTokens":632,"outputTokens":41},"costUsd":0,"failures":[],"requests":{"groq":1}}}
+
+event: round_complete
+data: {"type":"round_complete","round":2,"phase":"rebuttal"}
+
+event: turn_start
+data: {"type":"turn_start","turnId":"t10","agentId":"chair","role":"Chair","phase":"verdict","round":3}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"{\"recommendation\":\"[mock] "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"Proceed "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"with "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"a "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"small, "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"reversible "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"pilot "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"before "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"committing "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"fully.\",\"confidence\":0.62,\"agreements\":[\"[mock] "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"A "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"pilot "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"reduces "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"downside.\"],\"unresolved_disagreements\":[\"[mock] "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"Whether "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"upside "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"justifies "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"effort.\"],\"dissent\":{\"agent\":\"optimist\",\"reason\":\"[mock] "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"The "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"strongest "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"objection, "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"preserved "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"as "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"dissent.\"},\"what_would_change_my_mind\":[\"[mock] "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"Evidence "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"from "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"the "}
+
+event: token
+data: {"type":"token","turnId":"t10","text":"pilot.\"]}"}
+
+event: turn_end
+data: {"type":"turn_end","turnId":"t10","result":{"status":"ok","text":"{\"recommendation\":\"[mock] Proceed with a small, reversible pilot before committing fully.\",\"confidence\":0.62,\"agreements\":[\"[mock] A pilot reduces downside.\"],\"unresolved_disagreements\":[\"[mock] Whether the upside justifies the effort.\"],\"dissent\":{\"agent\":\"optimist\",\"reason\":\"[mock] The strongest objection, preserved as dissent.\"},\"what_would_change_my_mind\":[\"[mock] Evidence from the pilot.\"]}","model":"google:gemini-2.5-flash","usage":{"inputTokens":970,"outputTokens":100},"costUsd":0,"failures":[],"requests":{"google":1}}}
+
+event: verdict
+data: {"type":"verdict","verdict":{"recommendation":"[mock] Proceed with a small, reversible pilot before committing fully.","confidence":0.62,"agreements":["[mock] A pilot reduces downside."],"unresolved_disagreements":["[mock] Whether the upside justifies the effort."],"dissent":{"agent":"optimist","reason":"[mock] The strongest objection, preserved as dissent."},"what_would_change_my_mind":["[mock] Evidence from the pilot."]},"usage":{"inputTokens":5513,"outputTokens":464,"costUsd":0,"turns":[{"turnId":"t1","agentId":"chair","model":"google:gemini-2.5-flash","inputTokens":360,"outputTokens":36,"costUsd":0},{"turnId":"t2","agentId":"optimist","model":"groq:llama-3.3-70b-versatile","inputTokens":406,"outputTokens":38,"costUsd":0},{"turnId":"t3","agentId":"skeptic","model":"google:gemini-2.5-flash","inputTokens":436,"outputTokens":38,"costUsd":0},{"turnId":"t4","agentId":"cost-analyst","model":"mistral:mistral-small-latest","inputTokens":400,"outputTokens":47,"costUsd":0},{"turnId":"t5","agentId":"risk-officer","model":"groq:openai/gpt-oss-120b","inputTokens":414,"outputTokens":41,"costUsd":0},{"turnId":"t6","agentId":"optimist","model":"groq:llama-3.3-70b-versatile","inputTokens":624,"outputTokens":38,"costUsd":0},{"turnId":"t7","agentId":"skeptic","model":"google:gemini-2.5-flash","inputTokens":653,"outputTokens":38,"costUsd":0},{"turnId":"t8","agentId":"cost-analyst","model":"mistral:mistral-small-latest","inputTokens":618,"outputTokens":47,"costUsd":0},{"turnId":"t9","agentId":"risk-officer","model":"groq:openai/gpt-oss-120b","inputTokens":632,"outputTokens":41,"costUsd":0},{"turnId":"t10","agentId":"chair","model":"google:gemini-2.5-flash","inputTokens":970,"outputTokens":100,"costUsd":0}],"requests":{"google":4,"groq":4,"mistral":2}}}
+
